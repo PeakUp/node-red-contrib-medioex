@@ -1,0 +1,26 @@
+{
+  "name": "node-red-contrib-medioex",
+  "version": "0.1.0",
+  "description": "Node-RED module for Raspberry PI shield MedIOEx.",
+  "author": "Fatih Doğan @ PeakUp Information Technologies",
+  "license": "ISC",
+  "dependencies":{
+    "medioex-js": "^0.1.0"
+  },
+  "keywords": ["node-red"],
+  "node-red": {
+    "nodes" : {
+        "analog-output-init":"nodes/analog-output-init/analog-output-init.js",
+        "analog-input-init":"nodes/analog-input-init/analog-input-init.js",
+	"digital-output-input-init"  : "nodes/digital-output-input-init/digital-output-input-init.js",
+
+        "analog-write-value": "nodes/analog-write-value/analog-write-value.js",
+        "digital-set-high" : "nodes/digital-set-high/digital-set-high.js",
+        "digital-set-low"  : "nodes/digital-set-low/digital-set-low.js",
+        "digital-set"  : "nodes/digital-set/digital-set.js",
+
+        "analog-get-value": "nodes/analog-get-value/analog-get-value.js",
+        "digital-get-value": "nodes/digital-get-value/digital-get-value.js"
+    }
+  }
+}
